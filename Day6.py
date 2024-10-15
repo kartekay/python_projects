@@ -1,8 +1,13 @@
 import random
+words_list = ['nation', 'county', 'police', 'friend']
 while True:
- 
-
- words_list = ['noting', 'county', 'police', 'friend']
+ x=input("Do you want to add more words Y or N ?")
+ if x=="Y":
+    z= int(input("How many ?"))
+    while d<z:
+       r=str(input("Enter Word"))
+       z-=1
+       words_list.append(r)
  A = input("Enter Y to begin the game ")
  stages = ['stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'stage6']
  hanger = ["\b|\n\b|\n\bO", "\b|\n\b|\n\bO\n\b|", "\b|\n\b|\n\bO\n\b|\ ", "\b|\n\b|\n\bO\n/|\ ", "\b|\n\b|\n\bO\n/|\ \n/",
@@ -22,9 +27,9 @@ while True:
                 print("Already Guessed")
             else:
                i+=1
-               for k in b: 
-                if k==c:
-                   String[b.index(k)]=c
+               for k in range (0,len(b)): 
+                if b[k]==c:
+                   String[k]=c
                print(' '.join(String))
         else:
             r += 1
