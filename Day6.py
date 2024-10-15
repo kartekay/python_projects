@@ -21,17 +21,20 @@ while True:
             if c in String:
                 print("Already Guessed")
             else:
-                i+=1
-                String[b.index(c)]=c
-                print(' '.join(String))
+               i+=1
+               for k in b: 
+                if k==c:
+                   String[b.index(k)]=c
+               print(' '.join(String))
         else:
             r += 1
             stage = 'stage' + str(r)
             number = stages.index(stage)
             print(hanger[number])
             print(6-r," Trials remaining")
-        if i==len(b):
+        if '_' not in String:
               print("Winner")
               break
         elif r==len(b):      
               print("Game Over")
+    
