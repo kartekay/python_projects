@@ -1,5 +1,6 @@
+import random
 while True:
- import random
+ 
 
  words_list = ['nation', 'county', 'police', 'friend']
  A = input("Enter Y to begin the game ")
@@ -25,6 +26,7 @@ while True:
             stage = 'stage' + str(r)
             number = stages.index(stage)
             print(hanger[number])
+            print(6-r," Trials remaining")
     if i==len(b):
               print("Winner")
     else:      
