@@ -1,7 +1,7 @@
 import random
 words_list = ['nation', 'county', 'police', 'friend']
 while True:
- x=input("Do you want to add more words Y or N ?")
+ x=input("Do you want to add more words Y or N ? ")
  if x=="Y":
     z= int(input("How many ?"))
     while d<z:
