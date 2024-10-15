@@ -15,7 +15,7 @@ while True:
     r = 0
     i = 0
     String=['_','_','_','_','_','_']
-    while r < len(b):
+    while r,i < len(b):
         c = input("Enter a alphabet in the word chosen ")
         if c in b:
             i+=1
