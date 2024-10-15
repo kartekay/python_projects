@@ -1,11 +1,12 @@
-import random
+while True:
+ import random
 
-words_list = ['nation', 'county', 'police', 'friend']
-A = input("Enter Y to begin the game ")
-stages = ['stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'stage6']
-hanger = ["\b|\n\b|\n\bO", "\b|\n\b|\n\bO\n\b|", "\b|\n\b|\n\bO\n\b|\ ", "\b|\n\b|\n\bO\n/|\ ", "\b|\n\b|\n\bO\n/|\ \n/",
+ words_list = ['nation', 'county', 'police', 'friend']
+ A = input("Enter Y to begin the game ")
+ stages = ['stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'stage6']
+ hanger = ["\b|\n\b|\n\bO", "\b|\n\b|\n\bO\n\b|", "\b|\n\b|\n\bO\n\b|\ ", "\b|\n\b|\n\bO\n/|\ ", "\b|\n\b|\n\bO\n/|\ \n/",
           "\b|\n\b|\n\bO\n/|\ \n/\b\ "]
-if A == "Y":
+ if A == "Y":
 
     b = words_list[random.randint(0, len(words_list) - 1)]
     b = list(''.join(b))
