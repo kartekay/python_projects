@@ -11,10 +11,12 @@ if A == "Y":
     b = list(''.join(b))
     print("The Game Begins")
     r = 0
+    i = 0
     String=['_','_','_','_','_','_']
     while r < len(b):
         c = input("Enter a alphabet in the word chosen ")
         if c in b:
+            i+=1
             String[b.index(c)]=c
             print(' '.join(String))
         else:
@@ -22,4 +24,7 @@ if A == "Y":
             stage = 'stage' + str(r)
             number = stages.index(stage)
             print(hanger[number])
-    print("Game Over")
+    if i==len(b):
+              print("Winner")
+    else:      
+              print("Game Over")
